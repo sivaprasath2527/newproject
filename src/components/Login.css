@@ -1,0 +1,139 @@
+body {
+  background-color: rgb(34, 193, 195);
+  background: linear-gradient(
+    135deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.loginform {
+  background-color: #ffffff;
+  border-radius: 25px;
+  max-width: 500px;
+  min-width: 400px;
+  min-height: 400px;
+  line-height: 2rem;
+  text-align: center;
+}
+.headerTitle {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 2rem;
+}
+.row {
+  font-size: 1.3rem;
+}
+.row label {
+  padding-bottom: 0.5rem;
+  color: rgba(187, 187, 187, 0.9);
+}
+.row input {
+  border: none;
+  font-size: 1.3rem;
+  padding-left: 2rem;
+  box-shadow: inset 0px -3px 0px rgba(187, 187, 187, 0.2);
+  transition: box-shadow 0.2s ease-in;
+}
+.row input:focus {
+  box-shadow: inset 0px -3px 0px 0px rgba(34, 193, 195, 0.7);
+  outline: none;
+}
+
+.row input:hover::-webkit-input-placeholder,
+.row input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.row button {
+  border-radius: 25px;
+  width: 80%;
+  height: 40px;
+  font-size: 1.3rem;
+  color: white;
+  font-weight: 700;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    90deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  border: 0px;
+  cursor: pointer;
+  transition: opacity 0.25s ease-out;
+}
+
+.row button:hover {
+  opacity: 0.8;
+}
+
+.button {
+  padding: 1rem 0;
+}
+
+#iconGroup {
+  display: flex;
+  padding: 1rem 0;
+  justify-content: space-around;
+  margin: 0 25px;
+}
+
+#alternativeLogin {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.signup {
+  font-size: 1.3rem;
+  padding-bottom: 2rem;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container {
+    background-color: black;
+
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .container {
+    background-color: red;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .container {
+    background-color: cyan;
+  }
+  .poster {
+    float: left;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container {
+    background-color: yellow;
+  }
+  .poster {
+    background-color: blue;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .container {
+    background-color: green;
+  }
+}
